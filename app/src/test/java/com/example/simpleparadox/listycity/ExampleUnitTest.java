@@ -22,4 +22,13 @@ public class ExampleUnitTest {
         list.addCity(city);
         assertTrue(list.hasCity(city));
     }
+
+    @Test
+    public void delCityTest() {
+        City city = new City("something", "nowhere");
+        list.addCity(city);
+        assertTrue(list.hasCity(city));
+        list.delCity(city);
+        assertFalse(list.hasCity(city));
+    }
 }
