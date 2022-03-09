@@ -31,11 +31,11 @@ public class CustomList extends ArrayAdapter<City> {
 
     public int addCity(City city){
         cities.add(city);
-        return
+        return;
     }
 
     public boolean hasCity(City city){
-        return;
+        return cities.contains(city);
     }
 
 
