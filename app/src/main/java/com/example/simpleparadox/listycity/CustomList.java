@@ -25,6 +25,19 @@ public class CustomList extends ArrayAdapter<City> {
         this.context = context;
     }
 
+    public int getCount(){
+        return cities.size();
+    }
+
+    public int addCity(City city){
+        cities.add(city);
+        return
+    }
+
+    public boolean hasCity(City city){
+        return;
+    }
+
 
     @NonNull
     @Override
