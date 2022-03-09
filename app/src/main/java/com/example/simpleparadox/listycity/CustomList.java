@@ -39,6 +39,7 @@ public class CustomList extends ArrayAdapter<City> {
     }
 
     public void delCity(City city){
+        cities.remove(city);
         return;
     }
 
