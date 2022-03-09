@@ -31,4 +31,14 @@ public class ExampleUnitTest {
         list.delCity(city);
         assertFalse(list.hasCity(city));
     }
+
+    @Test
+    public void countCityTest() {
+        int count = list.getCount();
+        City city1 = new City("something1", "nowhere1");
+        City city2 = new City("something2", "nowhere2");
+        list.addCity(city1);
+        list.addCity(city2);
+        assertEquals(list.countCity(), count + 2);
+    }
 }

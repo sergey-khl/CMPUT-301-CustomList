@@ -43,6 +43,10 @@ public class CustomList extends ArrayAdapter<City> {
         return;
     }
 
+    public int countCity(){
+        return 0;
+    }
+
 
     @NonNull
     @Override
